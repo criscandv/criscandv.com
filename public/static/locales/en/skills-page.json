@@ -1,0 +1,13 @@
+{
+  "title": "Skills & <1/> Experience",
+  "firstParagraph": "The main area of my experience is web development (build web applications and pages) Also, I've worked in some mobile applications.",
+  "secondParagraph": {
+    "first": "With the use of the main development tools, I've made multiple",
+    "link": "projects",
+    "second": "as <1>freelancer</1> and at the service of companies."
+  },
+  "thirdParagraph": {
+    "first": "Check my <1>Linkedin</1> profile if you want to know more delails about me or",
+    "link": "contact me"
+  }
+}

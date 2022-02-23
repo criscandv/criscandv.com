@@ -1,0 +1,55 @@
+body {
+    background-color: #05232d!important;
+    /*overflow: hidden!important;*/
+    max-width: 99%;
+    padding-left: 80px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #05232d inset !important;
+}
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+    -webkit-text-fill-color: #efefef !important;
+}
+
+@media(max-width: 1024px){
+    body {
+        padding-top: 100px;
+        padding-left: 0;
+        max-width: unset;
+    }
+}
+
+/*@media(orientation: landscape){*/
+/*    body {*/
+/*        padding-top: 70px;*/
+/*    }*/
+/*}*/
+
+@media(max-width: 768px){
+    body {
+        padding-top: 50px;
+    }
+}
+
+.row {
+    margin-right: 0!important;
+    margin-left: 0!important;
+}

@@ -1,0 +1,13 @@
+{
+  "button": {
+    "contact": "Contáctame",
+    "see-more": "Ver más"
+  },
+  "menubar": {
+    "m-inicio": "Inicio",
+    "m-about": "Sobre mí",
+    "m-skills": "Skills",
+    "m-briefcase": "Portafolio",
+    "m-contact": "Contácto"
+  }
+}

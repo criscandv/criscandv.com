@@ -1,0 +1,20 @@
+{
+  "title": "Contáctame",
+  "firstParagraph": "Estoy interesado en proyectos como construcción de páginas web, desarrollo de aplicaciones o cualquier tipo de idea que desees hacer realidad. Siempre estaré atento y dispuesto a ayudarte.",
+  "secondParagraph": "Si tienes preguntas, dudas o cualquier recomendación, contáctame en cualquier momento.",
+  "form": {
+    "pName": "Nombre",
+    "pEmail": "* Email",
+    "pNumber": "Teléfono",
+    "pMessage": "* Mensaje",
+    "check": {
+      "first": "He leído y autorizo la",
+      "link": "política de privacidad y protección de datos"
+    },
+    "info": {
+      "allInputs": "Por favor, completa todos los campos",
+      "validEmail": "Por favor, introduce un email válido",
+      "acceptTerms": "Por favor, Acepta los términos y condiciones"
+    }
+  }
+}

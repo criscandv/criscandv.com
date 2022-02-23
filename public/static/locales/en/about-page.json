@@ -1,0 +1,10 @@
+{
+  "title": "About",
+  "subtitle": "Nice to meet you.",
+  "firstParagraph": "Since i start my job as software developer about 3 years ago, I've worked on different projects like web pages or mobile applications and some consultancies for small companies.",
+  "secondParagraph": "I'm constantly working to improve my skills and offer quality work, fast and fully adapted to your needs.",
+  "thirdParagraph": {
+    "first": "Do you have any idea? Would you like to start in the digital transformation? Do you want to know more about my skills?",
+    "second": "I'll be ready to help you."
+  }
+}

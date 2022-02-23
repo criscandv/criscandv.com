@@ -1,0 +1,20 @@
+{
+  "title": "Contact me",
+  "firstParagraph": "I'm interesting in projects as build web pages, development of applications or any idea that you want to make come true. I'll always be attentive and ready to help you.",
+  "secondParagraph": "If you have questions, dudes or any recommendation, contact me in any moment.",
+  "form": {
+    "pName": "Name",
+    "pEmail": "* Email",
+    "pNumber": "Phone",
+    "pMessage": "* Message",
+    "check": {
+      "first": "I've read and authorize the",
+      "link": "privacy and data protection policy"
+    },
+    "info": {
+      "allInputs": "Please, complete all the fields",
+      "validEmail": "Please, Introduce a valid email",
+      "acceptTerms": "Please, Accept terms and conditions"
+    }
+  }
+}

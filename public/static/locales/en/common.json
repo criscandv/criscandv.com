@@ -1,0 +1,22 @@
+{
+  "button": {
+    "contact": "Contact me",
+    "see-more": "More..."
+  },
+  "menubar": {
+    "m-inicio": "Home",
+    "m-about": "About",
+    "m-skills": "Skills",
+    "m-briefcase": "Briefcase",
+    "m-contact": "Contact"
+  },
+  "lang": {
+    "btn": {
+      "title": "Language",
+      "langs": {
+        "es": "Spanish",
+        "en": "English"
+      }
+    }
+  }
+}

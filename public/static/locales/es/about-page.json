@@ -1,0 +1,10 @@
+{
+  "title": "Acerca de mí",
+  "subtitle": "Encantado de conocerte.",
+  "firstParagraph": "Desde que comencé mi labor como desarrollador de software hace más de 3 años, he realizado diferentes trabajos tales como páginas y aplicaciones web, aplicaciones móviles y algunas consultorías para pequeñas empresas.",
+  "secondParagraph": "Estoy constantemente en la labor de mejorar mis habilidades y en ofrecer un trabajo de calidad, rápido y totalmente adaptado a las necesidades presentadas.",
+  "thirdParagraph": {
+    "first": "¿Tienes algúna idea, deseas entrar en el mundo de la transformación digital o quieres conocer mas acerca de mis habilidades?",
+    "second": "estaré dispuesto a ayudarte."
+  }
+}
