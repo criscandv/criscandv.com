@@ -1,0 +1,33 @@
+---
+import CompanyIcon from '@/components/icons/Company.astro'
+import Badge from '@/components/Badge.astro'
+
+const {
+  name,
+  isCurrent,
+  company,
+  summary,
+  startDate,
+  endDate,
+  location
+} = Astro.props
+---
+
+<li class="mb-10 ms-6">
+    <span class="absolute flex items-center justify-center size-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+      <CompanyIcon class="size-3 text-blue-800 dark:text-blue-300"/>
+    </span>
+    <h3 class="flex items-center gap-3 text-lg font-semibold text-gray-900 dark:text-white">
+      {name}
+      {company && `- ${company}. `}
+      {isCurrent && <Badge>Actualmente...</Badge>}
+    </h3>
+    <time class="block my-1.5 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+      {!isCurrent ? `${startDate}`: `${startDate} - Actualmente. `}
+      {endDate && `- ${endDate}. `}
+      {location}
+    </time>
+    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+      {summary}
+    </p>
+</li>

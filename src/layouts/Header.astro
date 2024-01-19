@@ -1,0 +1,72 @@
+---
+import { SOCIAL_NETWORKS } from '@/utils/constants'
+---
+
+<header
+  class={`
+    mx-auto
+    mb-5
+    sticky top-0
+    w-full lg:w-[740px]
+    z-10
+    px-0
+    sm:px-4
+    lg:px-0
+  `}
+>
+  <nav
+    class={`
+      border border-black sm:border-white
+      px-3 pt-2 sm:py-1 sm:mt-2 sm:rounded-full
+      flex flex-col sm:flex-row items-center
+      place-content-between
+      bg-neutral-200 dark:bg-black/30
+      backdrop-blur-2xl
+    `}
+  >
+    <div>
+      <a href="/" class="">
+        <img src="/img/criscandv-profile-rounded.png" alt="criscandv-rounded.png" class="size-14" />
+      </a>
+    </div>
+    <div class="flex flex-row items-center mt-5 sm:my-5">
+      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href="/#experiencia">Experiencia</a
+      >
+      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href="/#proyectos">
+        Proyectos
+      </a>
+      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href="#">
+        Sobre mí
+      </a>
+      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm hidden sm:block sm:text-base"
+        href={SOCIAL_NETWORKS.LINKEDIN.url} target="_blank">
+        Contacto
+      </a>
+      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href="/#blog">
+        Blog
+      </a>
+    </div>
+    <div class="flex flex-row items-center my-2 mt-3 sm:hidden">
+      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href={SOCIAL_NETWORKS.GITHUB.url} title={SOCIAL_NETWORKS.GITHUB.name}>
+        {<SOCIAL_NETWORKS.GITHUB.icon class="size-5"/>}
+      </a>
+      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href={SOCIAL_NETWORKS.LINKEDIN.url} title={SOCIAL_NETWORKS.LINKEDIN.name}>
+        {<SOCIAL_NETWORKS.LINKEDIN.icon class="size-5"/>}
+      </a>
+      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href={SOCIAL_NETWORKS.TWITTER.url} title={SOCIAL_NETWORKS.TWITTER.name}>
+        {<SOCIAL_NETWORKS.TWITTER.icon class="size-5"/>}
+      </a>
+      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href={SOCIAL_NETWORKS.INSTAGRAM.url} title={SOCIAL_NETWORKS.INSTAGRAM.name}>
+        {<SOCIAL_NETWORKS.INSTAGRAM.icon class="size-5"/>}
+      </a>
+    </div>
+  </nav>
+</header>
