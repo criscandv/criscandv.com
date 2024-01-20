@@ -2,18 +2,32 @@
 import Layout from '../layouts/Layout.astro';
 import SectionContainer from '@/components/SectionContainer.astro';
 import LinkButton from '@/components/LinkButton.astro';
+import Projects from '@/components/Projects.astro';
 import ExperienceItem from '@/components/ExperienceItem.astro';
-import ProjectItem from '@/components/ProjectItem.astro';
+import AnimatedBadge from '@/components/AnimatedBadge.astro';
+
 import BriefcaseIcon from '@/components/icons/Briefcase.astro';
 import CodeIcon from '@/components/icons/Code.astro';
 import BookIcon from '@/components/icons/Book.astro';
 
-import { YEAR_START_PROGRAMMING, SOCIAL_NETWORKS, LABORAL_EXPERIENCE, PROJECTS } from '@/utils/constants';
+import { YEAR_START_PROGRAMMING, SOCIAL_NETWORKS, LABORAL_EXPERIENCE } from '@/utils/constants';
 
 const devYears = new Date().getFullYear() - YEAR_START_PROGRAMMING
+const isLabPage = ['localhost:4321', 'dev.criscandv.com'].includes(Astro.url.host)
 ---
 
 <Layout title="Portafolio Cristian Cano" description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad at, iusto, molestiae, ipsum dolore a vero ullam eos odit vitae nihil. Rem et sunt eos nihil fuga, at voluptate! Ab.'>
+	{isLabPage && (
+		<div class="flex items-center justify-center mb-3">
+			<AnimatedBadge>
+				<span class="text-red-500 flex gap-1 place-items-center px-16 py-0.5"  >
+					<CodeIcon/>
+					Under development
+					<CodeIcon/>
+				</span>
+			</AnimatedBadge>
+		</div>
+	)}
 	<main class="px-4">
 		<SectionContainer id="sobre-mi" >
 			<h1 class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
@@ -92,21 +106,7 @@ const devYears = new Date().getFullYear() - YEAR_START_PROGRAMMING
         <CodeIcon class="size-7" />
         Proyectos
       </h2>
-			<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">                  
-				{PROJECTS.slice(0,4).map(project => (
-					<ProjectItem {...project}/>
-				))}
-			</div>
-			<div class="flex flex-col sm:flex-row gap-3 items-center justify-center mt-3">
-				<LinkButton href={`${SOCIAL_NETWORKS.GITHUB.url}?tab=repositories`}>
-					{<CodeIcon class="size-4 md:size-6"/>}
-					Ver todo
-				</LinkButton>
-				<LinkButton href={`${SOCIAL_NETWORKS.GITHUB.url}?tab=repositories`}>
-					{<SOCIAL_NETWORKS.GITHUB.icon class="size-4 md:size-6"/>}
-					Ver en Github
-				</LinkButton>
-			</div>
+			<Projects/>
 		</SectionContainer>
 
 		<SectionContainer id="blog">
