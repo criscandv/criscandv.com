@@ -1,6 +1,6 @@
 ---
 import CompanyIcon from '@/components/icons/Company.astro'
-import Badge from '@/components/Badge.astro'
+import AnimatedBadge from '@/components/AnimatedBadge.astro'
 
 const {
   name,
@@ -20,7 +20,7 @@ const {
     <h3 class="flex items-center gap-3 text-lg font-semibold text-gray-900 dark:text-white">
       {name}
       {company && `- ${company}. `}
-      {isCurrent && <Badge>Actualmente...</Badge>}
+      {isCurrent && <AnimatedBadge>Actualmente...</AnimatedBadge>}
     </h3>
     <time class="block my-1.5 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
       {!isCurrent ? `${startDate}`: `${startDate} - Actualmente. `}
