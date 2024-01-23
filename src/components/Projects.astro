@@ -1,24 +1,22 @@
 ---
-import ProjectItem from '@/components/ProjectItem.astro';
-import LinkButton from '@/components/LinkButton.astro';
+import ProjectItem from "@/components/ProjectItem.astro";
+import LinkButton from "@/components/LinkButton.astro";
 
-import CodeIcon from '@/components/icons/Code.astro';
+import CodeIcon from "@/components/icons/Code.astro";
 
-import { SOCIAL_NETWORKS, PROJECTS } from '@/utils/constants';
+import { SOCIAL_NETWORKS, PROJECTS } from "@/utils/constants";
 ---
 
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">                  
-  {PROJECTS.slice(0,4).map(project => (
-    <ProjectItem {...project}/>
-  ))}
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+  {PROJECTS.slice(0, 4).map((project) => <ProjectItem {...project} />)}
 </div>
 <div class="flex flex-col sm:flex-row gap-3 items-center justify-center mt-3">
-  <LinkButton href={`${SOCIAL_NETWORKS.GITHUB.url}?tab=repositories`}>
+  <!-- <LinkButton href={`${SOCIAL_NETWORKS.GITHUB.url}?tab=repositories`}>
     {<CodeIcon class="size-4 md:size-6"/>}
     Ver todo
-  </LinkButton>
+  </LinkButton> -->
   <LinkButton href={`${SOCIAL_NETWORKS.GITHUB.url}?tab=repositories`}>
-    {<SOCIAL_NETWORKS.GITHUB.icon class="size-4 md:size-6"/>}
+    {(<SOCIAL_NETWORKS.GITHUB.icon class="size-4 md:size-6" />)}
     Ver en Github
   </LinkButton>
 </div>

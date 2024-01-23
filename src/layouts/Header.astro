@@ -1,5 +1,5 @@
 ---
-import { SOCIAL_NETWORKS } from '@/utils/constants'
+import { SOCIAL_NETWORKS } from "@/utils/constants";
 ---
 
 <header
@@ -26,46 +26,72 @@ import { SOCIAL_NETWORKS } from '@/utils/constants'
   >
     <div>
       <a href="/" class="">
-        <img src="/img/criscandv-profile-rounded.png" alt="criscandv-rounded.png" class="size-14" />
+        <img
+          src="/img/criscandv-profile-rounded.png"
+          alt="criscandv-rounded.png"
+          class="size-14"
+        />
       </a>
     </div>
     <div class="flex flex-row items-center mt-5 sm:my-5">
-      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+      <a
+        class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
         href="/#experiencia">Experiencia</a
       >
-      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
-        href="/#proyectos">
+      <a
+        class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href="/#proyectos"
+      >
         Proyectos
       </a>
-      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
-        href="#">
+      <a
+        class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href="#"
+      >
         Sobre mí
       </a>
-      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm hidden sm:block sm:text-base"
-        href={SOCIAL_NETWORKS.LINKEDIN.url} target="_blank">
+      <a
+        class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm hidden sm:block sm:text-base"
+        href={SOCIAL_NETWORKS.LINKEDIN.url}
+        target="_blank"
+      >
         Contacto
       </a>
-      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
-        href="/#blog">
+      <!-- <a
+        class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href="/#blog"
+      >
         Blog
-      </a>
+      </a> -->
     </div>
     <div class="flex flex-row items-center my-2 mt-3 sm:hidden">
-      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
-        href={SOCIAL_NETWORKS.GITHUB.url} title={SOCIAL_NETWORKS.GITHUB.name}>
-        {<SOCIAL_NETWORKS.GITHUB.icon class="size-5"/>}
+      <a
+        class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href={SOCIAL_NETWORKS.GITHUB.url}
+        title={SOCIAL_NETWORKS.GITHUB.name}
+      >
+        {(<SOCIAL_NETWORKS.GITHUB.icon class="size-5" />)}
       </a>
-      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
-        href={SOCIAL_NETWORKS.LINKEDIN.url} title={SOCIAL_NETWORKS.LINKEDIN.name}>
-        {<SOCIAL_NETWORKS.LINKEDIN.icon class="size-5"/>}
+      <a
+        class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href={SOCIAL_NETWORKS.LINKEDIN.url}
+        title={SOCIAL_NETWORKS.LINKEDIN.name}
+      >
+        {(<SOCIAL_NETWORKS.LINKEDIN.icon class="size-5" />)}
       </a>
-      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
-        href={SOCIAL_NETWORKS.TWITTER.url} title={SOCIAL_NETWORKS.TWITTER.name}>
-        {<SOCIAL_NETWORKS.TWITTER.icon class="size-5"/>}
+      <a
+        class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href={SOCIAL_NETWORKS.TWITTER.url}
+        title={SOCIAL_NETWORKS.TWITTER.name}
+      >
+        {(<SOCIAL_NETWORKS.TWITTER.icon class="size-5" />)}
       </a>
-      <a class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
-        href={SOCIAL_NETWORKS.INSTAGRAM.url} title={SOCIAL_NETWORKS.INSTAGRAM.name}>
-        {<SOCIAL_NETWORKS.INSTAGRAM.icon class="size-5"/>}
+      <a
+        class="hover:bg-white/10 rounded-full px-2 sm:px-3 transition text-sm sm:text-base"
+        href={SOCIAL_NETWORKS.INSTAGRAM.url}
+        title={SOCIAL_NETWORKS.INSTAGRAM.name}
+      >
+        {(<SOCIAL_NETWORKS.INSTAGRAM.icon class="size-5" />)}
       </a>
     </div>
   </nav>
