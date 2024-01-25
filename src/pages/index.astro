@@ -26,19 +26,6 @@ const isLabPage = ["localhost:4321", "dev.criscandv.com"].includes(
   title="Cristian Cano | Portafolio"
   description="+7 años de experiencia como Desarrollador fullstack web y móvil. Creando experiencias alucinantes en el mundo web"
 >
-  {
-    isLabPage && (
-      <div class="absolute top-1 left-1 flex items-center justify-center mb-3 opacity-90 z-20">
-        <AnimatedBadge>
-          <span class="text-red-400 flex gap-0.5 place-items-center px-1 py-0.5 text-xs">
-            <CodeIcon class="size-3" />
-            v1.0
-            <CodeIcon class="size-3" />
-          </span>
-        </AnimatedBadge>
-      </div>
-    )
-  }
   <main class="px-4">
     <SectionContainer id="sobre-mi">
       <h1
