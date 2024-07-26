@@ -1,5 +1,6 @@
 // Tech icons
 import Backbone from "@/components/icons/Backbone.astro";
+import Astro from "@/components/icons/AstroIcon.astro";
 import ChakraUI from "@/components/icons/ChakraUI.astro";
 import Codeigniter from "@/components/icons/Codeigniter.astro";
 import Django from "@/components/icons/Django.astro";
@@ -18,6 +19,7 @@ import Tailwind from "@/components/icons/Tailwind.astro";
 import Twitter from "@/components/icons/Twitter.astro";
 import Vue from "@/components/icons/Vue.astro";
 import Wordpress from "@/components/icons/Wordpress.astro";
+import AstroIcon from "@/components/icons/AstroIcon.astro";
 
 export const YEAR_START_PROGRAMMING = 2017;
 
@@ -177,9 +179,30 @@ const TECH_TAGS = {
     icon: NodeJS,
     class: "",
   },
+  ASTRO: {
+    name: "Astro",
+    icon: AstroIcon,
+    class: ""
+  }
 };
 
 export const PROJECTS = [
+  {
+    name: "fisioterapiagranollers.com",
+    isOpenSource: false,
+    githubRepoUrl: "",
+    description:
+      "Centro de fisioterapia. Se enseñan sus servicios, terapias y contacto.",
+    link: "https://fisioterapiagranollers.com",
+    img: "/img/portfolio/elilunaart.jpg",
+    tags: [
+      TECH_TAGS.ASTRO,
+      TECH_TAGS.DJANGO,
+      /* TECH_TAGS.PYTHON, */
+      TECH_TAGS.CHAKRAUI,
+    ],
+    date: "2022-12 | En curso",
+  },
   {
     name: "elilunaart.com",
     isOpenSource: false,
@@ -189,15 +212,28 @@ export const PROJECTS = [
     link: "https://elilunaart.com",
     img: "/img/portfolio/elilunaart.jpg",
     tags: [
-      TECH_TAGS.REACT,
-      TECH_TAGS.NEXTJS,
+      TECH_TAGS.ASTRO,
       TECH_TAGS.DJANGO,
       /* TECH_TAGS.PYTHON, */
       TECH_TAGS.CHAKRAUI,
     ],
     date: "2022-12 | En curso",
   },
-
+  {
+    name: "CDV Control Panel",
+    isOpenSource: false,
+    githubRepoUrl: "",
+    description:
+      "Software de control de activos. Generación de Código QR. Chat integrado",
+    link: "https://cp.criscandv.com/",
+    img: "/img/portfolio/adha.jpg",
+    tags: [
+      TECH_TAGS.REACT,
+      TECH_TAGS.DJANGO,
+      TECH_TAGS.TAILWIND,
+    ],
+    date: "2019-06 | En curso",
+  },
   {
     name: "Adha",
     isOpenSource: false,
